@@ -8,6 +8,7 @@ const CustomForm = ({ addTask }) => {
   const [Task, setTask] = useState("");
   // event handler
   const handleFormSubmit = (e) => {
+    // prevents the default form from submitting
     e.preventDefault();
     addTask({
       name: Task,
